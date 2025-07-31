@@ -1,0 +1,4 @@
+{
+  "scopus_api_key": "your_scopus_api_key_here",
+  "_comment": "Copy this file to config.json and add your actual Scopus API key"
+}
