@@ -56,7 +56,7 @@ git init
 git add .
 git commit -m "Initial commit"
 git branch -M main
-git remote add origin https://github.com/yourusername/abstract-search-mcp.git
+git remote add origin https://github.com/TaehongKim/classScopusMCP.git
 git push -u origin main
 ```
 
@@ -64,14 +64,14 @@ git push -u origin main
 
 ```bash
 # 프로젝트 루트에 .npmrc 파일 생성
-echo "@yourusername:registry=https://npm.pkg.github.com" > .npmrc
+echo "@TaehongKim:registry=https://npm.pkg.github.com" > .npmrc
 ```
 
 ### 3. package.json 수정
 
 ```json
 {
-  "name": "@yourusername/abstract-search-mcp",
+  "name": "@TaehongKim/abstract-search-mcp",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   }
@@ -84,7 +84,7 @@ echo "@yourusername:registry=https://npm.pkg.github.com" > .npmrc
 
 ```bash
 # GitHub PAT으로 로그인
-npm login --scope=@yourusername --registry=https://npm.pkg.github.com
+npm login --scope=@TaehongKim --registry=https://npm.pkg.github.com
 ```
 
 ### 5. 배포
@@ -99,10 +99,10 @@ npm publish
 
 ```bash
 # 공개 저장소에서 설치
-npm install -g git+https://github.com/yourusername/abstract-search-mcp.git
+npm install -g git+https://github.com/TaehongKim/classScopusMCP.git
 
 # 프라이빗 저장소에서 설치 (SSH)
-npm install -g git+ssh://git@github.com/yourusername/abstract-search-mcp.git
+npm install -g git+ssh://git@github.com/TaehongKim/classScopusMCP.git
 ```
 
 ### 2. 로컬 패키지 배포

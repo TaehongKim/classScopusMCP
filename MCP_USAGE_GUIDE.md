@@ -166,7 +166,7 @@ get_abstract_by_doi를 사용해서 DOI "10.1038/nature12373"의 초록을 가�
 
 ## 📞 문의
 
-추가 지원이 필요한 경우 GitHub Issues를 통해 문의해주세요.
+추가 지원이 필요한 경우 [GitHub Issues](https://github.com/TaehongKim/classScopusMCP/issues)를 통해 문의해주세요.
 
 ## 🔗 참고 자료
 

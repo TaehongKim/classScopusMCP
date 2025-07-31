@@ -1,4 +1,4 @@
-# Abstract Search MCP Tool
+# ClassScopus MCP Tool
 
 📚 **Model Context Protocol (MCP) 도구로 학술 논문 검색 및 초록 가져오기**
 
@@ -11,6 +11,7 @@ Scopus, Crossref, PubMed API를 통합하여 논문을 검색하고 초록을 �
 - 🔄 **다중 소스**: 여러 데이터베이스에서 최고 품질의 초록 선택
 - 🛡️ **보안**: 환경변수를 통한 안전한 API 키 관리
 - 🚀 **간편 설치**: npx로 즉시 사용 가능
+- 🐍 **Python 레거시**: 기존 Python 버전 코드 포함
 
 ## 🚀 빠른 시작
 
@@ -126,8 +127,8 @@ DOI로 특정 논문의 초록을 가져옵니다.
 
 ```bash
 # 저장소 복제
-git clone https://github.com/yourusername/abstract-search-mcp.git
-cd abstract-search-mcp
+git clone https://github.com/TaehongKim/classScopusMCP.git
+cd classScopusMCP
 
 # 의존성 설치
 npm install
@@ -142,14 +143,22 @@ npx abstract-search-mcp
 ### 프로젝트 구조
 
 ```
-abstract-search-mcp/
+classScopusMCP/
 ├── abstract-search-server.js    # 메인 MCP 서버
 ├── bin/
 │   └── abstract-search.js       # 실행 래퍼
 ├── config.example.json          # 설정 파일 예시
+├── claude_desktop_config.example.json  # Claude Desktop 설정 예시
 ├── package.json                 # 패키지 정보
 ├── .npmignore                   # NPM 무시 파일
-└── README.md                    # 문서
+├── README.md                    # 메인 문서
+├── MCP_SETUP_GUIDE.md          # MCP 설정 가이드
+├── MCP_USAGE_GUIDE.md          # MCP 사용 가이드
+├── DEPLOYMENT.md               # 배포 가이드
+└── python-legacy/              # Python 레거시 코드
+    ├── scopusAPI.py            # Python Scopus API
+    ├── mcp_abstract_search_server.py  # Python MCP 서버
+    └── requirements_mcp.txt     # Python 의존성
 ```
 
 ## 🌐 지원하는 데이터베이스
@@ -168,16 +177,27 @@ MIT License - 자세한 내용은 [LICENSE](LICENSE) 파일을 참조하세요.
 
 ## 📞 지원
 
-- GitHub Issues: [이슈 생성](https://github.com/yourusername/abstract-search-mcp/issues)
+- GitHub Issues: [이슈 생성](https://github.com/TaehongKim/classScopusMCP/issues)
 - 문서: [MCP 공식 문서](https://modelcontextprotocol.io/)
 
 ## 🎯 로드맵
 
+- [x] Scopus API 통합
+- [x] Crossref API 통합
+- [x] PubMed API 통합
+- [x] MCP 서버 구현
+- [x] Python 레거시 코드 포함
 - [ ] arXiv API 통합
 - [ ] Google Scholar 지원
 - [ ] 인용 정보 추가
 - [ ] 논문 전문 링크 제공
 - [ ] 캐싱 기능 추가
+
+## 📚 추가 문서
+
+- [MCP 설정 가이드](MCP_SETUP_GUIDE.md) - MCP 서버 설정 방법
+- [MCP 사용 가이드](MCP_USAGE_GUIDE.md) - 실제 사용 예시
+- [배포 가이드](DEPLOYMENT.md) - NPM 배포 및 배포 전략
 
 ---
 
