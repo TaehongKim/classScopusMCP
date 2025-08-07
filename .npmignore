@@ -1,0 +1,42 @@
+# Development files
+*.log
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test files
+test/
+tests/
+*.test.js
+__tests__/
+
+# Development dependencies
+node_modules/
+
+# Local configuration
+config.json
+.env
+.env.local
+
+# Git files
+.git/
+.gitignore
+
+# Documentation source
+docs/
+*.md.backup
+
+# Build artifacts
+dist/
+build/
+
+# Temporary files
+tmp/
+temp/

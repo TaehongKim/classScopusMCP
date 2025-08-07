@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "abstract-search": {
+      "command": "npx",
+      "args": ["abstract-search-mcp"],
+      "env": {
+        "SCOPUS_API_KEY": "your_scopus_api_key_here"
+      }
+    }
+  }
+}

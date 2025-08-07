@@ -1,0 +1,62 @@
+{
+  "name": "abstract-search-mcp",
+  "version": "1.0.0",
+  "description": "MCP (Model Context Protocol) 초록 검색 도구 - 논문 검색 및 초록 가져오기",
+  "main": "abstract-search-server.js",
+  "bin": {
+    "abstract-search-mcp": "./abstract-search-server.js"
+  },
+  "scripts": {
+    "start": "node abstract-search-server.js",
+    "dev": "node bin/abstract-search.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "abstract-search",
+    "scopus",
+    "academic",
+    "research",
+    "papers",
+    "ai",
+    "llm",
+    "citation",
+    "pubmed",
+    "crossref",
+    "doi",
+    "classscopus"
+  ],
+  "author": {
+    "name": "Taehong Kim",
+    "email": "taehong.kim@example.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TaehongKim/classScopusMCP.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TaehongKim/classScopusMCP/issues"
+  },
+  "homepage": "https://github.com/TaehongKim/classScopusMCP#readme",
+  "files": [
+    "abstract-search-server.js",
+    "bin/",
+    "config.example.json",
+    "claude_desktop_config.example.json",
+    "README.md",
+    "MCP_SETUP_GUIDE.md",
+    "MCP_USAGE_GUIDE.md",
+    "DEPLOYMENT.md",
+    "package.json"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "xml2js": "^0.6.2"
+  },
+  "devDependencies": {}
+} 
